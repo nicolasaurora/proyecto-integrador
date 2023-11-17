@@ -1,8 +1,42 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+
 .header {
     grid-area: header;
+    background: linear-gradient(var.$colorTertiary, var.$colorSecondary);
+    border-radius: 1vw / 1vw;
+    .buy {
+        display: flex;
+        justify-content: end;
 
-   
+        &__img {
+        width: 2vw;
+        cursor: pointer;
+        }
+    }
+
+    &__logo {
+        width: 4vw;
+        height: auto;
+        box-shadow: 1px 1px 10px 1px grey;
+        border-radius: 1vw / 1vw;
+    }
+    
+    &__title {
+        text-align: center;
+        letter-spacing: 8px;
+        font-family: 'Agbalumo', Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    }
+
+    &__subtitle {
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: 'Agbalumo', Arial, Helvetica, sans-serif;
+        margin-bottom: 2vw;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    }
+
+
 }

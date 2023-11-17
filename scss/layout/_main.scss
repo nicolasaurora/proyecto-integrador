@@ -1,8 +1,120 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+
+
 .main {
     grid-area: main;
+    
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: .5vw;
+    }
+
+    &__form-group input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var.$colorTertiary;
+        font-size: .8vw;
+    }
+
+    &__form-group textarea {
+        outline: none;
+        border: 1px solid var.$colorTertiary;
+        font-size: .8vw;
+        resize: vertical;
+        
+    }
 
 
+    &__form-group label {
+        font-size: .9vw;
+    }
+
+    &__form-group--radio {
+        display: block;
+    }
+
+    
+    &__form-group--radio input {
+        margin: .5vw;
+    }
+
+
+    &__form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    
+
+
+    .section {
+        width: 100%;
+        
+
+        &--slider {
+            overflow: hidden;
+        }
+
+        
+        &--cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3vw;
+        }
+
+        &--gallery {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 1vw;
+            
+            h3{
+                font-family: 'Agbalumo', Arial, Helvetica, sans-serif;
+                font-size: 2rem;
+                margin-top: 2vw;
+                text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+                letter-spacing: 2px;
+            }
+        }
+
+        &__lupa {
+            width: 1.5vw;
+            height: fit-content;
+            cursor: pointer;
+        }
+
+        &__product {
+            margin-bottom: 1vw;
+            
+        }
+
+        &__search {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+        #id-search {
+            background-color: var.$colorPrimary;
+            border: 1px solid rgb(70, 70, 70);
+            padding: .4vw;
+            border-radius: 1vw / 1vw;
+        }
+
+        #id-search::placeholder {
+            color: var.$colorTitle;
+           
+        }
+    }
+
+    
+
+    
 }

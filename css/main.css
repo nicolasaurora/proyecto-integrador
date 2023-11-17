@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,21 +16,321 @@ a:link {
   text-decoration: none;
 }
 
+.button {
+  border: 0.0625rem solid black;
+  border-radius: 0.3rem;
+  padding: 0.2vw;
+  box-shadow: 1px 1px 10px -3px grey;
+  cursor: pointer;
+  font-weight: bold;
+}
+.button--alta {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(0, 120, 170);
+  border-radius: 1vw/1vw;
+  margin-top: 3vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5vw;
+}
+.button--alta:hover {
+  box-shadow: 1px 1px 10px -1px rgb(0, 120, 170);
+}
+.button--alta:link {
+  color: black;
+  font-weight: bold;
+}
+.button--sm {
+  width: 6rem;
+  padding: 0.125rem;
+  font-size: 0.8rem;
+}
+.button--md {
+  width: 9rem;
+  padding: 0.25rem;
+  font-size: 0.9rem;
+}
+.button--lg {
+  width: 12rem;
+  padding: 0.125rem;
+  font-size: 0.9rem;
+}
+.button--add {
+  background-color: whitesmoke;
+  color: black;
+  transition: all 500ms;
+}
+.button--add:hover {
+  color: blue;
+  box-shadow: 1px 1px 10px -2px blue;
+}
+.button--remove {
+  background-color: whitesmoke;
+  color: black;
+  transition: all 400ms;
+}
+.button--remove:hover {
+  color: rgb(168, 1, 1);
+  box-shadow: 1px 1px 10px -2px rgb(168, 1, 1);
+}
+
+.slider {
+  position: relative;
+  height: 50vh;
+  width: 300%;
+  display: flex;
+  animation-name: move-slide;
+  animation-duration: 18s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.slider__one, .slider__two, .slider__three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__title {
+  position: absolute;
+  font-size: 2rem;
+  color: navy;
+}
+.slider__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@keyframes move-slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -100%;
+  }
+  95% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.card {
+  padding: 1vw;
+  background-color: rgba(245, 245, 245, 0.849);
+  box-shadow: 1px 1px 10px -1px grey;
+  border-radius: 1vw/1vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: url(../images/fondos/fondo-geometria.png);
+}
+.card__image {
+  width: 100%;
+  border-radius: 1vw/1vw;
+  box-shadow: 1px 1px 10px -1px grey;
+}
+.card__title {
+  color: black;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-family: "Agbalumo", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+.card__price {
+  font-weight: bold;
+}
+.card__price::before {
+  content: "$";
+}
+.card--products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+}
+
 body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
+  gap: 1vw;
   padding: 0.5vw;
   width: calc(100% - 1vw);
 }
 
 .footer {
   grid-area: footer;
+  text-align: center;
+  border-radius: 1vw/1vw;
+  background-color: rgb(0, 120, 170);
+  background-image: url(../images/fondos/geometria.png);
+}
+.footer__span {
+  height: 2vw;
+  color: rgba(245, 245, 245, 0.849);
+  letter-spacing: 0.5px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(white, rgb(0, 120, 170));
+}
+.footer__img {
+  width: 1vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2.5vw 1vw;
 }
 
 .header {
   grid-area: header;
+  background: linear-gradient(rgb(0, 120, 170), white);
+  border-radius: 1vw/1vw;
+}
+.header .buy {
+  display: flex;
+  justify-content: end;
+}
+.header .buy__img {
+  width: 2vw;
+  cursor: pointer;
+}
+.header__logo {
+  width: 4vw;
+  height: auto;
+  box-shadow: 1px 1px 10px 1px grey;
+  border-radius: 1vw/1vw;
+}
+.header__title {
+  text-align: center;
+  letter-spacing: 8px;
+  font-family: "Agbalumo", Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.header__subtitle {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Agbalumo", Arial, Helvetica, sans-serif;
+  margin-bottom: 2vw;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .main {
   grid-area: main;
+}
+.main__form-group {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0.5vw;
+}
+.main__form-group input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(0, 120, 170);
+  font-size: 0.8vw;
+}
+.main__form-group textarea {
+  outline: none;
+  border: 1px solid rgb(0, 120, 170);
+  font-size: 0.8vw;
+  resize: vertical;
+}
+.main__form-group label {
+  font-size: 0.9vw;
+}
+.main__form-group--radio {
+  display: block;
+}
+.main__form-group--radio input {
+  margin: 0.5vw;
+}
+.main__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .section {
+  width: 100%;
+}
+.main .section--slider {
+  overflow: hidden;
+}
+.main .section--cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+}
+.main .section--gallery {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1vw;
+}
+.main .section--gallery h3 {
+  font-family: "Agbalumo", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-top: 2vw;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+.main .section__lupa {
+  width: 1.5vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+.main .section__product {
+  margin-bottom: 1vw;
+}
+.main .section__search {
+  display: flex;
+  justify-content: center;
+}
+.main .section #id-search {
+  background-color: rgb(141, 203, 230);
+  border: 1px solid rgb(70, 70, 70);
+  padding: 0.4vw;
+  border-radius: 1vw/1vw;
+}
+.main .section #id-search::-moz-placeholder {
+  color: black;
+}
+.main .section #id-search::placeholder {
+  color: black;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  border-top: 2px solid black;
+}
+.navbar__item {
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+  font-family: "Agbalumo", Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.navbar__item:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

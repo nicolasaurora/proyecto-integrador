@@ -1,6 +1,26 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
-.nabvar {
-    
+.navbar {
+    &__menu {
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+        border-top: 2px solid black;
+    }
+
+    &__item {
+        font-size: 1.1rem;
+        cursor: pointer;
+        font-weight: bold;
+        color: var.$colorTitle;
+        letter-spacing: 2px;
+        font-family: 'Agbalumo', Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    }
+
+    &__item:hover {
+        text-decoration: underline;
+    }
+
 }

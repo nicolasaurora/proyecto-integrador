@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+
+
+.card {
+    padding: 1vw;
+    background-color: var.$backgroundCards;
+    box-shadow: 1px 1px 10px -1px grey;
+    border-radius: 1vw / 1vw;
+    width: fit-content;
+    background-image: url(../images/fondos/fondo-geometria.png);
+
+    
+
+    &__image {
+        width: 100%;
+        border-radius: 1vw / 1vw;
+        box-shadow: 1px 1px 10px -1px grey;
+    }
+
+    &__title {
+        color: var.$colorTitle;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-family: 'Agbalumo', Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+    }
+
+    &__price {
+        font-weight: bold;
+        
+
+        &::before {
+            content: "$";
+        }
+    }
+
+    &--products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3vw;
+    }
+
+   
+}

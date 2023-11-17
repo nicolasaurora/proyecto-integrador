@@ -1,2 +1,72 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+.button {
+    border: 0.0625rem solid black;
+    border-radius: 0.3rem;
+    padding: .2vw;
+    box-shadow: 1px 1px 10px -3px grey;
+    cursor: pointer;
+    font-weight: bold;
+
+    &--alta {
+        display: flex;
+        justify-content: center;
+        border: 1px solid var.$colorTertiary;
+        border-radius: 1vw / 1vw;
+        margin-top: 3vw;
+        width: fit-content;
+        padding: .5vw;
+    }
+
+    &--alta:hover {
+        box-shadow: 1px 1px 10px -1px var.$colorTertiary;
+        
+    }
+
+    &--alta:link{
+        color: var.$colorTitle;
+        font-weight: bold;
+        
+    }
+
+    &--sm {
+        width: 6rem;
+        padding: 0.125rem;
+        font-size: 0.80rem;
+    }
+
+    &--md {
+        width: 9rem;
+        padding: 0.25rem;
+        font-size: 0.90rem;
+    }
+
+    &--lg {
+        width: 12rem;
+        padding: 0.125rem;
+        font-size: 0.90rem;
+    }
+
+    &--add {
+        background-color: whitesmoke;
+        color: var.$colorTitle;
+        transition: all 500ms;
+
+        &:hover {
+            color: var.$colorButtonAdd;
+            box-shadow: 1px 1px 10px -2px var.$colorButtonAdd;
+        }
+    }
+
+     &--remove {
+        background-color: whitesmoke;
+        color: var.$colorTitle;
+        transition: all 400ms;
+
+        &:hover {
+            color: var.$colorButtonRemove;
+            box-shadow: 1px 1px 10px -2px var.$colorButtonRemove;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta pagina es una tienda de bicicletas">
+    <meta name="keywords" content="tienda, bicicletas, rodado">
+    <meta name="author" content="Martin Nicolas Aurora">
+
+    <title>Mi tienda</title>
+
+    <link rel="shorcut icon" href="./images/icons/senal-de-estacionamiento (1).png" type="imagen/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="home">
+    <header class="header">
+        <img class="header__logo" src="./images/icons/senal-de-estacionamiento.png" alt="Logo">
+        <h1 class="header__title">Bicla</h1>
+        <h4 class="header__subtitle">Rodando caminos</h4>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./index.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./index.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="buy">
+            <img class="buy__img" src="./images/icons/carrito-de-compras.png" alt="logo de carrito de compras">
+        </div>
+    </header>
+
+    <main>
+
+        <form action="#" class="main__form">
+            <div class="main__form-group">
+                <label for="id-nombre">Nombre:</label>
+                <input type="text" name="nombre" id="id-nombre" required>
+            </div>
+            <div class="main__form-group">
+                <label for="id-precio">Precio:</label>
+                <input type="number" name="precio" id="id-precio" required>
+            </div>
+            <div class="main__form-group">
+                <label for="id-stock">Stock:</label>
+                <input type="number" name="stock" id="id-stock" min="0">
+            </div>
+            <div class="main__form-group">
+                <label for="id-marca">Marca:</label>
+                <input type="text" name="marca" id="id-marca" required>
+            </div>
+            <div class="main__form-group">
+                <label for="id-categoria">Categoria:</label>
+                <select name="categoria" id="id-categoria">
+                    <option value="urbanas">Urbanas</option>
+                    <option value="BMX">BMX</option>
+                    <option value="ruta">Ruta</option>
+                    <option value="montain bike">Moutain bike</option>
+                    <option value="ciclismo">Ciclismo</option>
+                </select>
+            </div>
+            <div class="main__form-group">
+                <label for="id-short-descriptcion">Descripcion corta</label>
+                <textarea name="descripcion-corta" id="id-short-descriptcion" cols="10" rows="3"
+                    maxlength="100"></textarea>
+            </div>
+            <div class="main__form-group">
+                <label for="id-long-descriptcion">Descripcion larga</label>
+                <textarea name="descripcion-larga" id="id-long-descriptcion" cols="40" rows="6"
+                    maxlength="1500"></textarea>
+            </div>
+            <div class="main__form-group main__form-group--radio">
+                <p>Producto:</p>
+                <label for="id-product0">Importado</label>
+                <input type="radio" name="product" id="id-product0" value="0">
+                <label for="id-product0">Nacional</label>
+                <input type="radio" name="product" id="id-product1" value="1">
+            </div>
+            <div class="main__form-group main__form-group--radio">
+                <label for="id-envio">Envio sin cargo</label>
+                <input type="checkbox" name="envio" id="id-envio">
+            </div>
+            <div class="main__form-group">
+                <input class="main__file" type="file">
+            </div>
+        </form>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li>
+                <a href=""><img class="footer__img" src="./images/icons/facebook.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/mail.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/instagram.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/twitter.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/linkedin.png" alt=""></a>
+            </li>
+        </ul>
+
+
+        <span class="footer__span">&copy; 2023 Todos los derechos reservados</span>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>

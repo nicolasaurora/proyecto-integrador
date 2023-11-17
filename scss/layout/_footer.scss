@@ -4,6 +4,31 @@
 
 .footer {
     grid-area: footer;
+    text-align: center;
+    border-radius: 1vw / 1vw;
+    background-color: var.$colorTertiary;
+    background-image: url(../images/fondos/geometria.png);
+   
 
+    &__span {
+        height: 2vw;
+        color: var.$backgroundCards;
+        letter-spacing: .5px;
+        
 
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient(var.$colorSecondary,var.$colorTertiary);
+
+    }
+
+    &__img {
+        width: 1vw;
+        height: fit-content;
+        margin: 2.5vw 1vw;
+        
+    }
 }

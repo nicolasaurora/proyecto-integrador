@@ -10,13 +10,37 @@
     border-radius: 1vw / 1vw;
     width: fit-content;
     background-image: url(../images/fondos/fondo-geometria.png);
-
+    text-align: justify;
     
 
     &__image {
         width: 100%;
         border-radius: 1vw / 1vw;
         box-shadow: 1px 1px 10px -1px grey;
+    }
+
+    &__text {
+       display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-align: justify;
+        
+    }
+
+    &__button-show {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: bold;
+        align-self: flex-end;
+    }
+
+    &__p-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
     }
 
     &__title {
@@ -43,4 +67,39 @@
     }
 
    
+}
+
+
+.card-contact {
+    padding: 1vw;
+    background-color: var.$backgroundCards;
+    box-shadow: 1px 1px 10px -1px grey;
+    border-radius: 1vw / 1vw;
+    width: 100%;
+    height: fit;
+
+
+    &__title {
+        text-align: center;
+        color: var.$colorTitle;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-family: 'Agbalumo', Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        margin-bottom: .5vw;
+    }
+
+
+    &__img {
+        display: flex;
+        width: 1.2vw;
+        height: fit-content;
+    }
+
+    &__box {
+        display: flex;
+        gap: 1vw;
+        margin: 1vw 0;
+        width: fit-content;
+    }
 }

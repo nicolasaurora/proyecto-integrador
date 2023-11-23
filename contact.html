@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta pagina es una tienda de bicicletas">
+    <meta name="keywords" content="tienda, bicicletas, rodado">
+    <meta name="author" content="Martin Nicolas Aurora">
+
+    <title>Mi tienda</title>
+
+    <link rel="shorcut icon" href="./images/icons/senal-de-estacionamiento (1).png" type="imagen/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="home">
+    <header class="header">
+        <img class="header__logo" src="./images/icons/senal-de-estacionamiento.png" alt="Logo">
+        <h1 class="header__title">Bicla</h1>
+        <h4 class="header__subtitle">Rodando caminos</h4>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./index.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./index.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="buy">
+            <img class="buy__img" src="./images/icons/carrito-de-compras.png" alt="logo de carrito de compras">
+        </div>
+    </header>
+
+    <main class="main-contact">
+
+        <section class="section__contact">
+            <figure class="card-contact">
+                <h3 class="card-contact__title">Datos de contacto</h3>
+
+                <div class="card-contact__box">
+                    <img src="./images/icons/telefono.png" class="card-contact__img" alt="Icono de telefono">
+                    <p>116986577 / 1168954690</p>
+                </div>
+
+                <div class="card-contact__box">
+                    <img src="./images/icons/mail.png" class="card-contact__img" alt="Icono de mail">
+                    <p>bicla@gmail.com</p>
+                </div>
+
+                <div class="card-contact__box">
+                    <img src="./images/icons/ubicacion.png" class="card-contact__img" alt="Icono de ubicacion">
+                    <p>Av Rouillón Oeste, Rosario, Santa Fe</p>
+                </div>
+
+                <div class="iframe-container">
+                    <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18944.643739523417!2d-60.6848463157318!3d-32.92535085401305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654a08896e0f7%3A0x4ee98cd74ab24d07!2sEstadio%20Gigante%20de%20Arroyito!5e0!3m2!1ses-419!2sar!4v1693522566152!5m2!1ses-419!2sar" frameborder="0"></iframe>
+                </div>
+            </figure>
+
+        </section>
+
+        <section class="section-iframe">
+            
+        </section>
+
+        <section class="section__consult">
+            <form action="#" class="main__form">
+                <div class="main__form-group">
+                    <label for="id-nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="id-nombre" required>
+                </div>
+        
+                <div class="main__form-group">
+                    <label for="id-email">Email:</label>
+                    <input type="email" name="email" id="id-email" required>
+                </div>
+        
+                <div class="main__form-group">
+                    <label for="id-consult">Consulta</label>
+                    <textarea name="consult" id="id-consult" cols="10" rows="3" maxlength="100"></textarea>
+                </div>
+
+                <div>
+                    <button class="button button-submit" type="submit">Enviar consulta</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li>
+                <a href=""><img class="footer__img" src="./images/icons/facebook.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/mail.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/instagram.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/twitter.png" alt=""></a>
+                <a href=""><img class="footer__img" src="./images/icons/linkedin.png" alt=""></a>
+            </li>
+        </ul>
+
+
+        <span class="footer__span">&copy; 2023 Todos los derechos reservados</span>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>

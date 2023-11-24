@@ -1,17 +1,20 @@
-const paragraph4 = document.querySelectorAll(".card__text");
-const buttonShow = document.querySelectorAll(".card__button-show");
+const paragraphs = document.querySelectorAll(".card__text");
+const buttonsShow = document.querySelectorAll(".card__button-show");
 
 function show() {
-    paragraph4.className = "card__text";
-    buttonShow.innerHTML = "Ver más";
-    buttonShow.onclick = hide;
+    const paragraph = this.previousElementSibling;
+    paragraph.classList.add("card__text");
+    this.innerHTML = "Ver más";
+    this.onclick = hide;
 }
 
 function hide() {
-    paragraph4.className = "";
-    buttonShow.innerHTML = "Ver menos";
-    buttonShow.onclick = show;
+    const paragraph = this.previousElementSibling;
+    paragraph.classList.remove("card__text");
+    this.innerHTML = "Ver menos";
+    this.onclick = show;
 }
 
-
-buttonShow.onclick = hide;
+buttonsShow.forEach(function (button) {
+    button.onclick = hide;
+});

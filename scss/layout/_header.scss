@@ -5,7 +5,7 @@
 .header {
     grid-area: header;
     background: linear-gradient(var.$colorTertiary, var.$colorSecondary);
-    border-radius: 1vw / 1vw;
+    
     .buy {
         display: flex;
         justify-content: end;

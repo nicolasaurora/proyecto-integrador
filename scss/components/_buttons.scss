@@ -21,14 +21,12 @@
     }
 
     &--alta:hover {
-        box-shadow: 1px 1px 10px -1px var.$colorTertiary;
-        
+        box-shadow: 1px 1px 10px -1px var.$colorTertiary; 
     }
 
     &--alta:link{
         color: var.$colorTitle;
         font-weight: bold;
-        
     }
 
     &--sm {

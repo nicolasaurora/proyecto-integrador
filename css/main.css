@@ -229,6 +229,12 @@ a:link {
   gap: 3vw;
 }
 
+.card:hover {
+  box-shadow: 1px 1px 10px -1px rgb(0, 120, 170);
+  transition: all 300ms;
+  transform: scale(1.01);
+}
+
 .card-contact {
   padding: 1vw;
   background-color: rgba(245, 245, 245, 0.849);
@@ -269,7 +275,6 @@ body {
 .footer {
   grid-area: footer;
   text-align: center;
-  border-radius: 1vw/1vw;
   background-color: rgb(0, 120, 170);
   background-image: url(../images/fondos/geometria.png);
 }
@@ -293,7 +298,6 @@ body {
 .header {
   grid-area: header;
   background: linear-gradient(rgb(0, 120, 170), white);
-  border-radius: 1vw/1vw;
 }
 .header .buy {
   display: flex;

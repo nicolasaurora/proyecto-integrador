@@ -23,7 +23,6 @@
             margin: 0 .1vw;
             width: 20px;
             height: 20px;
-            // display: none;
         }
 
     }
@@ -56,6 +55,11 @@
     .header__logo {
         width: 6vw;
     }
+
+    .header .buy__img {
+        width: 3.5vw;
+    }
+    
 }
 
 @media(max-width: 768px) {
@@ -63,7 +67,7 @@
         width: 6vw;
     }
 
-    .buy__img {
+    .header .buy__img {
         width: 3vw;
     }
 }
@@ -73,7 +77,7 @@
         width: 8vw;
     }
 
-    .buy__img {
+    .header .buy__img {
         width: 4vw;
     }
 }

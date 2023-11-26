@@ -1,6 +1,12 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+.section {
+    &__alta {
+        margin-top: 2vw;
+    }
+}
+
 .button {
     border: 0.0625rem solid black;
     border-radius: 0.3rem;
@@ -76,6 +82,10 @@
 
 
 @media(max-width: 991px){
+    
+    .section__alta {
+        margin-top: 2vw;
+    }
     .button--sm {
         width: 5.5rem;
     }
@@ -83,7 +93,23 @@
 }
 
 @media(max-width: 768px) {
+
+    .section__alta {
+        margin-top: 3vw;
+    }
     .button--sm {
         width: 4rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .section__alta {
+        margin-top: 4vw;
+    }
+}
+
+@media(max-width: 480px) {
+    .section__alta {
+        margin-top: 4vw;
     }
 }

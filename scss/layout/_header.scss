@@ -14,6 +14,19 @@
         width: 2vw;
         cursor: pointer;
         }
+
+        &__counter {
+            background-color: var.$colorButtonRemove;
+            color: var.$colorSecondary;
+            text-align: center;
+            border-radius: 100%;
+            padding: .3vw;
+            margin: 0 .1vw;
+            width: 20px;
+            height: 20px;
+            // display: none;
+        }
+
     }
 
     &__logo {
@@ -38,5 +51,30 @@
         text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     }
 
+}
 
+@media(max-width: 991px) {
+    .header__logo {
+        width: 6vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .header__logo {
+        width: 6vw;
+    }
+
+    .buy__img {
+        width: 3vw;
+    }
+}
+
+@media(max-width: 600px) {
+    .header__logo {
+        width: 8vw;
+    }
+
+    .buy__img {
+        width: 4vw;
+    }
 }

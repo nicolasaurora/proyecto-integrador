@@ -195,3 +195,180 @@
     }
 
 }
+
+
+@media(max-width: 1280px) {
+
+    .main__form-group input {
+        font-size: 1vw;
+    }
+
+    .main__form-group label {
+        font-size: 1.2vw;
+    }
+
+    .main__form-group textarea {
+        font-size: 1.2vw;
+    }
+}
+
+@media(max-width: 1024px) {
+    .main__form-group input {
+        font-size: 1.3vw;
+    }
+
+    .main__form-group label {
+        font-size: 1.5vw;
+    }
+
+    .main__form-group textarea {
+        font-size: 1.5vw;
+    }
+
+    .section__lupa {
+        margin: .5vw;
+    
+    }
+}
+
+
+@media(max-width: 991px) {
+
+    .main__form-group {
+        width: 30%;
+    }
+
+    .main__form-group input {
+        font-size: 1.5vw;
+    }
+
+    .main__form-group label {
+        font-size: 1.7vw;
+    }
+
+    .main__form-group textarea {
+        font-size: 1.7vw;
+    }
+
+}
+
+
+@media(max-width: 991px) {
+    .section--cards {
+        display: flex;
+    }
+}
+
+@media(max-width: 768px) {
+    .section--cards {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vw;
+    }
+
+    .main__form-group {
+        width: 40%;
+    }
+
+    .main__form-group input {
+        font-size: 1.8vw;
+    }
+
+    .main__form-group label {
+        font-size: 2vw;
+    }
+
+    .main__form-group textarea {
+        font-size: 2vw;
+    }
+
+    .section__lupa {
+        width: 4vw;
+    }
+
+     .iframe-container iframe {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .section__contact {
+        margin: 5vw 0;
+    }
+
+    .card-contact__img {
+        width: 2vw;
+    }
+}
+
+
+@media(max-width: 600px) {
+
+    .main__form-group {
+        width: 45%;
+    }
+
+    .main__form-group input {
+        font-size: 2.5vw;
+    }
+
+    .main__form-group label {
+        font-size: 2.5vw;
+    }
+
+    .main__form-group textarea {
+        font-size: 2.5vw;
+    }
+
+    .section__lupa {
+        width: 5vw;
+    }
+
+    .iframe-container iframe {
+        width: 60vw;
+        height: fit-content;
+    }
+
+    .section__contact {
+        margin: 5vw 0;
+    }
+
+    .card-contact__img {
+        width: 3vw;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .main__form-group {
+        width: 50%;
+    }
+
+    .main__form-group input {
+        font-size: 3vw;
+    }
+
+    .main__form-group label {
+        font-size: 3vw;
+    }
+
+    .main__form-group textarea {
+        font-size: 3vw;
+    }
+
+    .section__lupa {
+        width: 6vw;
+    }
+
+    .iframe-container iframe {
+        width: 60vw;
+        height: fit-content;
+    }
+
+    .section__contact {
+        margin: 5vw 0;
+    }
+
+    .card-contact__img {
+        width: 3vw;
+    }
+}

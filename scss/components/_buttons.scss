@@ -73,3 +73,17 @@
             box-shadow: 1px 1px 10px -1px var.$colorTertiary;
         }
 }
+
+
+@media(max-width: 991px){
+    .button--sm {
+        width: 5.5rem;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .button--sm {
+        width: 4rem;
+    }
+}

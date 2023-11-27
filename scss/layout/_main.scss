@@ -26,9 +26,15 @@
         border: 1px solid var.$colorTertiary;
         font-size: .8vw;
         resize: vertical;
-        
+
     }
 
+    &__form-group span {
+        background-color: pink;
+        color: var.$colorButtonRemove;
+        border-radius: .1vw / .1vw;
+        border-inline: 1px solid var.$colorButtonRemove;
+    }
 
     &__form-group label {
         font-size: .9vw;

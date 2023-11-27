@@ -38,23 +38,26 @@
         <form action="#" class="main__form">
             <div class="main__form-group">
                 <label for="id-nombre">Nombre:</label>
-                <input type="text" name="nombre" id="id-nombre" required>
+                <input type="text" name="nombre" id="id-nombre">
+                <span class="form-span"></span>
             </div>
             <div class="main__form-group">
                 <label for="id-precio">Precio:</label>
-                <input type="number" name="precio" id="id-precio" required>
+                <input type="number" name="precio" id="id-precio">
+                <span class="form-span"></span>
             </div>
             <div class="main__form-group">
                 <label for="id-stock">Stock:</label>
                 <input type="number" name="stock" id="id-stock" min="0">
+                <span class="form-span"></span>
             </div>
             <div class="main__form-group">
                 <label for="id-marca">Marca:</label>
-                <input type="text" name="marca" id="id-marca" required>
+                <input type="text" name="marca" id="id-marca">
             </div>
             <div class="main__form-group">
                 <label for="id-categoria">Categoria:</label>
-                <select name="categoria" id="id-categoria">
+                <select name="categoria" id="id-categoria" required>
                     <option value="urbanas">Urbanas</option>
                     <option value="BMX">BMX</option>
                     <option value="ruta">Ruta</option>
@@ -63,13 +66,13 @@
                 </select>
             </div>
             <div class="main__form-group">
-                <label for="id-short-descriptcion">Descripcion corta</label>
-                <textarea name="descripcion-corta" id="id-short-descriptcion" cols="10" rows="3"
+                <label for="id-short-description">Descripcion corta</label>
+                <textarea name="descripcion-corta" id="id-short-description" cols="10" rows="3"
                     maxlength="100"></textarea>
             </div>
             <div class="main__form-group">
-                <label for="id-long-descriptcion">Descripcion larga</label>
-                <textarea name="descripcion-larga" id="id-long-descriptcion" cols="40" rows="6"
+                <label for="id-long-description">Descripcion larga</label>
+                <textarea name="descripcion-larga" id="id-long-description" cols="40" rows="6"
                     maxlength="1500"></textarea>
             </div>
             <div class="main__form-group main__form-group--radio">
@@ -88,7 +91,7 @@
             </div>
 
             <div>
-                <button class="button button-submit" type="submit">Subir producto</button>
+                <button class="button button-submit" id="button-submit" type="submit">Subir producto</button>
             </div>
         </form>
 

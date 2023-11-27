@@ -493,6 +493,12 @@ body {
   font-size: 0.8vw;
   resize: vertical;
 }
+.main__form-group span {
+  background-color: pink;
+  color: rgb(168, 1, 1);
+  border-radius: 0.1vw/0.1vw;
+  border-inline: 1px solid rgb(168, 1, 1);
+}
 .main__form-group label {
   font-size: 0.9vw;
 }

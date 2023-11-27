@@ -23,21 +23,82 @@ buttonsShow.forEach(function (button) {
 
 // -----------------------------------------------
 
-// const buttonAdd = document.querySelectorAll(".button--add");
-// const buttonRemove = document.querySelectorAll(".button--remove");
-// const cardCounter = document.querySelectorAll(".card__counter");
 
-// const buyCounter = document.getElementsByClassName(".buy__counter");
+//Contador de cards.
+const buttonsAdd = document.querySelectorAll(".button--add");
+const buttonsRemove = document.querySelectorAll(".button--remove");
+let cardCounters = document.querySelectorAll(".card__counter");
 
-// if (cardCounter.length === 0) {
-//     buttonRemove.forEach(function (button) {
-//         button.disabled = true;
-//     });
+// Verificar si no hay contadores de tarjetas y deshabilitar los botones de eliminación
+if (cardCounters.length === 0) {
+    buttonsRemove.forEach(button => {
+        button.disabled = true;
+    });
+}
 
-// }
+function add() {
+    buttonsAdd.forEach((button, index) => {
+        button.onclick = function () {
+            cardCounters[index].innerHTML++;
+            // Habilitar los botones de eliminación después de agregar una tarjeta
+            buttonsRemove.forEach(button => {
+                button.disabled = false;
+            });
+        };
+    });
+}
+
+add();
+
+function remove() {
+    buttonsRemove.forEach((button, index) => {
+        button.onclick = function () {
+            if (cardCounters[index].innerHTML > 0) {
+            cardCounters[index].innerHTML--;
+            }
+            // Deshabilitar los botones de eliminación si el contador llega a cero
+            if (cardCounters[index].innerHTML == 0) {
+                button.disabled = true;
+                buttonsRemove.setAttribute("disabled");
+            }
+        };
+    });
+}
+
+remove();
 
 
-// if (buttonAdd.onclick) {
-//     buyCounter.style.display = inline;
-// }
 
+//Validaciones 
+
+const inputName = document.getElementById("id-nombre");
+const inputPrice = document.getElementById("id-precio");
+const inputStock = document.getElementById("id-stock");
+const buttonValidate = document.getElementById("button-submit");
+
+
+const regexName = /^[a-zA-Z\s-]+$/;
+const regexPrice = /^\$?\d+(\.\d{1,2})?$/;
+const regexStock = /^(?:100|[1-9]?[0-9])$/;
+
+function validate() {
+    if(!regexName.test(inputName.value)) {
+        inputName.nextElementSibling.innerText = "El nombre es invalido";
+    } else {
+        inputName.nextElementSibling.innerText = "";
+    }
+
+    if (!regexPrice.test(regexPrice.value)) {
+        regexPrice.nextElementSibling.innerText = "El valor ingresado no corresponde a un numero";
+    } else {
+        regexPrice.nextElementSibling.innerText = "";
+    }
+
+    if (!regexStock.test(regexStock.value)) {
+        regexStock.nextElementSibling.innerText = "El numero ingresado supera el maximo permitido";
+    } else {
+        regexStock.nextElementSibling.innerText = "";
+    }
+}
+
+buttonValidate.onclick = validate;

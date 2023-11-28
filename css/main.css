@@ -427,6 +427,7 @@ body {
   margin: 0 0.1vw;
   width: 20px;
   height: 20px;
+  display: none;
 }
 .header__logo {
   width: 4vw;
@@ -682,6 +683,37 @@ body {
   }
   .main .section__lupa {
     width: 3vw;
+  }
+}
+@media (max-width: 860px) {
+  .main .section--cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main__form-group {
+    width: 40%;
+  }
+  .main__form-group input {
+    font-size: 1.8vw;
+  }
+  .main__form-group label {
+    font-size: 2vw;
+  }
+  .main__form-group textarea {
+    font-size: 2vw;
+  }
+  .main .section__lupa {
+    width: 4vw;
+  }
+  .iframe-container iframe {
+    width: 60vw;
+    height: 40vh;
+  }
+  .section__contact {
+    margin: 5vw 0;
+  }
+  .card-contact__img {
+    width: 2vw;
   }
 }
 @media (max-width: 768px) {
